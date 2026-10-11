@@ -12,7 +12,7 @@ At **Baibhav Collections**, we are committed to delivering your orders with unco
 ---
 
 ### 1. What is Baibhav Collections Shipping Policy?
-Baibhav Collections ships your purchased items in the fastest time possible. Every order is carefully checked and dispatched from our fulfillment facility within **24 to 48 hours**. 
+Baibhav Collections ships your purchased items—including our trending range of **mens swimming shorts**, resort wear, and designer apparel—in the fastest time possible. Every order is carefully checked and dispatched from our fulfillment facility within **24 to 48 hours**. 
 
 Please verify your delivery location by entering your PIN code at our checkout page before placing your order.
 

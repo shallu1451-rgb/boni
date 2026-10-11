@@ -144,7 +144,7 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 20px;
 }
 
 .nav-link {

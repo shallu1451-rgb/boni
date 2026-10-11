@@ -144,3 +144,31 @@ function initSidebarScrollSpy() {
     }
   });
 }
+
+/**
+ * Quick Add To Cart Toast Notification
+ */
+function handleAddToCart(productName) {
+  // Remove existing toast if any
+  const existing = document.querySelector('.cart-toast');
+  if (existing) existing.remove();
+
+  const toast = document.createElement('div');
+  toast.className = 'cart-toast';
+  toast.innerHTML = `
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c29d59" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <div>
+      <strong>Added to Bag!</strong><br>
+      <span style="font-size: 0.8125rem; opacity: 0.85;">${productName}</span>
+    </div>
+  `;
+  document.body.appendChild(toast);
+
+  setTimeout(() => {
+    toast.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateY(10px)';
+    setTimeout(() => toast.remove(), 400);
+  }, 3200);
+}
+

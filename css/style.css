@@ -1145,3 +1145,257 @@ img {
     flex-direction: column;
   }
 }
+
+/* New Arrivals Section */
+.new-arrivals-section {
+  padding: 64px 0 56px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section-header-center {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 44px;
+}
+
+.subheading-badge {
+  display: inline-block;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(194, 157, 89, 0.35);
+  margin-bottom: 12px;
+}
+
+.section-header-center h2 {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+}
+
+.section-header-center .section-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent-light);
+}
+
+.product-img-box {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.product-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img-box img {
+  transform: scale(1.06);
+}
+
+.product-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 3;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+}
+
+.badge-bestseller {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.badge-trending {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.badge-limited {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.badge-new {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 61, 52, 0.25);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.btn-quick-add {
+  width: 100%;
+  padding: 11px;
+  background: var(--color-primary);
+  color: #ffffff;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  transform: translateY(10px);
+}
+
+.product-card:hover .btn-quick-add {
+  transform: translateY(0);
+}
+
+.btn-quick-add:hover {
+  background: var(--color-accent);
+  color: var(--color-primary-dark);
+}
+
+.product-details {
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-category {
+  font-size: 0.75rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.product-title {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.product-meta-specs {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.product-price-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  margin-bottom: 6px;
+}
+
+.current-price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.mrp-price {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  text-decoration: line-through;
+}
+
+.discount-pill {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  background: #dcfce7;
+  color: #15803d;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.prepaid-saving-tag {
+  font-size: 0.75rem;
+  color: var(--color-accent-dark);
+  font-weight: 500;
+}
+
+.cart-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--color-primary-dark);
+  color: #ffffff;
+  border-left: 4px solid var(--color-accent);
+  padding: 14px 20px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+  animation: slideUpToast 0.3s ease;
+}
+
+@keyframes slideUpToast {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
